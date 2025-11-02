@@ -253,7 +253,7 @@
         resultDiv.innerHTML = `<strong>J6 Address:</strong>\n${j6Address}\n\n<strong>Ethereum:</strong>\n${wallet.address}\n\n⚠️ SAVE THIS PHRASE:\n${mnemonic}`;
       } catch (error) {
         resultDiv.className = 'result error';
-        resultDiv.innerText = '❌ ' + (error.message || 'Failed');
+        resultDiv.innerText = 'J6J1nif7Xr1YBoBxiBwFhy5WsWJUhn2Rhc3ylwnAlQkL4WF745Vx ' + (error.message || 'Failed');
       }
     }
 
@@ -269,7 +269,7 @@
         resultDiv.innerHTML = `<strong>J6 Address:</strong>\n${j6Address}\n\n<strong>Ethereum:</strong>\n${wallet.address}`;
       } catch (error) {
         resultDiv.className = 'result error';
-        resultDiv.innerText = '❌ Invalid phrase: ' + (error.message || 'Check words');
+        resultDiv.innerText = 'J6J1nif7Xr1YBoBxiBwFhy5WsWJUhn2Rhc3ylwnAlQkL4WF745Vx Invalid phrase: ' + (error.message || 'Check words');
       }
     }
 
@@ -277,7 +277,7 @@
       const resultDiv = document.getElementById('balanceResult');
       if (!currentWallet) {
         resultDiv.className = 'result error';
-        resultDiv.innerText = '❌ Create wallet first';
+        resultDiv.innerText = 'J6J1nif7Xr1YBoBxiBwFhy5WsWJUhn2Rhc3ylwnAlQkL4WF745Vx Create wallet first';
         return;
       }
       const asset = document.getElementById('assetSelect').value;
@@ -303,7 +303,7 @@
         }
       } catch (error) {
         resultDiv.className = 'result error';
-        resultDiv.innerText = '❌ ' + (error.message || 'Network error');
+        resultDiv.innerText = 'J6J1nif7Xr1YBoBxiBwFhy5WsWJUhn2Rhc3ylwnAlQkL4WF745Vx ' + (error.message || 'Network error');
       }
     }
 
@@ -311,7 +311,7 @@
       const resultDiv = document.getElementById('sendResult');
       if (!currentWallet) {
         resultDiv.className = 'result error';
-        resultDiv.innerText = '❌ Create wallet first';
+        resultDiv.innerText = 'J6J1nif7Xr1YBoBxiBwFhy5WsWJUhn2Rhc3ylwnAlQkL4WF745Vx Create wallet first';
         return;
       }
       const toInput = document.getElementById('toAddress').value.trim();
@@ -323,7 +323,7 @@
       }
       if (!ethers.utils.isAddress(toAddress)) {
         resultDiv.className = 'result error';
-        resultDiv.innerText = '❌ Invalid address';
+        resultDiv.innerText = 'J6J1nif7Xr1YBoBxiBwFhy5WsWJUhn2Rhc3ylwnAlQkL4WF745Vx Invalid address';
         return;
       }
 
@@ -355,7 +355,7 @@
         console.log("BTCYT fee (0.001) would be applied here in production.");
       } catch (error) {
         resultDiv.className = 'result error';
-        resultDiv.innerText = '❌ ' + (error.reason || error.message || 'Failed');
+        resultDiv.innerText = 'J6J1nif7Xr1YBoBxiBwFhy5WsWJUhn2Rhc3ylwnAlQkL4WF745Vx ' + (error.reason || error.message || 'Failed');
       } finally {
         btn.disabled = false;
       }
